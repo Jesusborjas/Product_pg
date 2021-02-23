@@ -2,49 +2,53 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Product Pg</title>
     <link rel="stylesheet" href="css/styles.css">
+    <title>Product PG</title>
   </head>
   <body>
-    <header id="header" id="nav-bar">
-      <img id="header-img" src="images/Therabody_logo.jpeg" alt="logo">
-      <nav>
+    <header id="header">
+      <img id="header-img" src="http://www.logo-designer.co/wp-content/uploads/2020/05/2020-theragun-rebrand-to-therabody-new-logo-design.png"
+      <nav id="nav-bar">
         <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">How it works?</a></li>
+          <li><a href="#about">About<a/></li>
+          <li><a href="#products">Products<a/></li>
+          <li><a href="#">Subscription<a/></li>
         </ul>
       </nav>
     </header>
 
-  <main class="main">
-    <div id=video>
+
+    <div id="video">
+      <h1>About us</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/cAwJgSRabo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div class="about">
-      <h1>About</h1>
-        <p></p>
+
+  <div class="products">
+    <h1>Products</h1>
+    <div class="grid-container">
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dw779fe12b/images/Home/PRO_PNG.png?sw=720" alt="theragun-pro"></div>
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dw66b10d47/images/PDP/ELITE_BLACK_HERO_1.jpg?sw=720" alt="elite"></div>
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwa3c42525/images/PDP/PRIME_HERO_1.jpg?sw=720" alt="prime"></div>
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwf086af5e/images/PDP/MINI_BLACK_HERO_1.jpg?sw=720" alt="mini"></div>
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwd8f4aeb1/images/PDP/Wave%20Roller/WAVE_ROLLER_HERO_1.jpg?sw=720" alt="wave-roller"></div>
+      <div class="grid-item"><img src="https://www.theragun.com/dw/image/v2/BCWX_PRD/on/demandware.static/-/Sites-thg-master/default/dwd1200de4/images/PDP/Accessories/YOGA_MAT_PDP_HERO_1.jpg?sw=720" alt="fitness-mat"></div>
     </div>
+  </div>
 
+    <div class="sign-up-page"
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2>Sign Up here for Notifications!</h2>
+        <label> Email address:<input id="email" type="email" placeholder="***********@email.com"></label>
 
-
-
-
-    <div class="products">
-      <h1>Products</h1>
-      <h3>Theragun Pro</h3>
-      <a href="https://www.theragun.com/us/en-us/pro-us.html"><img src="images/theragun-pro.jpg" alt="theragun-pro" target="_blank"></a>
-    </div>
-
-
-  </main>
-
-    <footer div="main-footer">
-      <form id="form">
-        <p>Enter your Email here:<input id="email" name="email" placeholder="#"></input></p>
-        <button type="submit" url="https://www.freecodecamp.com/email-submit.">Submit</button>
+        <div>
+        <button type="submit" id="submit">Submit</button>
+        </div>
       </form>
-    </footer>
+    </div>
+
+    <footer>Made by Jesus Borjas, 2021</footer>
+
+
   </body>
 </html>
