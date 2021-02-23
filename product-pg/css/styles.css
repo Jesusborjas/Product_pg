@@ -1,16 +1,25 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
-/* NAV-BAR */
+body {
+  text-align: center;
+}
 
-li, a, header-img{
-  font-weight: sans-serif;
+/* NAV BAR */
+#header-img {
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+}
+
+li, a {
+  font-family: sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: white;
+  color: #edf0f1;
   text-decoration: none;
 }
 
@@ -18,14 +27,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  background-color: black;
-  position: sticky;
-}
-
-#header-img {
-  cursor: pointer;
-  width: 150px;
+  padding: 10px 10%;
+  background-color: #24252a;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  position: fixed;
 }
 
 .nav-links {
@@ -34,7 +41,7 @@ header {
 
 .nav-links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .nav-links li a {
@@ -42,41 +49,85 @@ header {
 }
 
 .nav-links li a:hover {
-  color: blue;
+  color: #0088a9;
 }
 
-
-/* The VIDEO */
-
+/* VIDEO */
 #video {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  margin-top: 10rem;
+}
+#video h1{
+  margin-bottom: 2rem;
+  color: black;
 }
 
-/* body */
-main {
-background-color: white;
+
+
+/* PRODUCTS */
+
+.grid-container {
+  color: black;
+  width: 60%;
+  margin: 2rem auto;
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-container img {
+  width: 250px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
+.grid-item {
+  background-color: lightgray;
 }
 
-img {
-  height: 100px;
+.products h1{
+  color: black;
+  margin-top: 3.5rem;
 }
 
-.products a:hover {
-  cursor: pointer;
-  background-color: grey;
+/* Form */
+.sign-up-page {
+  color: black;
 }
-/* FOOTER */
-
-footer {
+h2 {
+  font-size: 2rem;
+  margin: 10px;
+}
+label {
+  font-size: 2rem;
+}
+input {
+  padding: 8px;
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+#submit {
+  padding: 10px 20px;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
-  margin-top: 40px;
-  padding: 20px 20px;
+  margin-top: 5px;
+  border-radius: 10px;
 }
+
+#submit:hover {
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 10px;
+  margin-top: 3rem;
+}
+
+
+
+/* MEDIA QUEARIS */
+
+@media ()
